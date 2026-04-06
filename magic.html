@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fun Play Kids</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fun Play Kids Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="menu">
+                <li class="dropdown">Home<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">Services<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="birthday.html">Birthday Party</a></li>
+                        <li><a href="magic.html">Magic Show</a></li>
+                        <li><a href="face-painting.html">Face Painting</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">Characters<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="superheroes.html">Superheroes</a></li>
+                        <li><a href="princesses.html">Princesses</a></li>
+                        <li><a href="cartoons.html">Cartoons</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <div class="header-actions">
+                    <button type="button" class="mode-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"><i class="fas fa-moon"></i></span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="mode-toggle rtl-toggle" id="rtl-toggle" aria-label="Toggle RTL mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb rtl-thumb">RTL</span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="login.html" class="login-btn mobile-login">Login</a>
+
+            </ul>
+
+        </div>
+    </header>
+
+
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Magic <span class="orange">Show</span></h2>
+            <p>Experience amazing magic tricks, fun surprises, and unforgettable moments that will leave kids smiling
+                and amazed.</p>
+        </div>
+    </section>
+
+    <section class="magic-highlights">
+
+        <!-- Floating stars -->
+        <div class="mh-stars" aria-hidden="true">
+            <i class="fas fa-star mstar ms1"></i>
+            <i class="fas fa-star mstar ms2"></i>
+            <i class="fas fa-star mstar ms3"></i>
+            <i class="fas fa-star mstar ms4"></i>
+            <i class="fas fa-star mstar ms5"></i>
+            <i class="fas fa-star mstar ms6"></i>
+        </div>
+
+        <div class="container">
+
+            <p class="section-sub">What Makes It Special</p>
+            <h2 class="section-title">
+                Magic Show <span class="mh-highlight">Highlights</span>
+            </h2>
+
+            <!-- Arc layout -->
+            <div class="mh-arc">
+
+                <!-- Card 1 -->
+                <div class="mh-card mh-card--side">
+                    <span class="mh-num">01</span>
+                    <div class="mh-icon-ring">
+                        <i class="fas fa-hat-wizard"></i>
+                    </div>
+                    <h3>Amazing Tricks</h3>
+                    <p>Enjoy mind-blowing magic tricks that surprise and entertain kids.</p>
+                </div>
+
+                <!-- Card 2 — center / featured -->
+                <div class="mh-card mh-card--center">
+                    <div class="mh-glow-ring"></div>
+                    <span class="mh-num">02</span>
+                    <div class="mh-icon-ring">
+                        <i class="fas fa-laugh"></i>
+                    </div>
+                    <h3>Fun & Laughter</h3>
+                    <p>Comedy magic that keeps children laughing and engaged.</p>
+                    <span class="mh-badge"><i class="fas fa-star inline-icon" aria-hidden="true"></i> Most
+                        Popular</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="mh-card mh-card--side">
+                    <span class="mh-num">03</span>
+                    <div class="mh-icon-ring">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Interactive Show</h3>
+                    <p>Kids can participate and become part of the magical experience.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="magic-experience">
+        <div class="container experience-wrap">
+
+            <!-- LEFT SIDE (TIMELINE) -->
+            <div class="exp-timeline">
+                <div class="exp-timeline-line"></div>
+
+                <div class="exp-step">
+                    <div class="exp-step-dot">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                    <div class="exp-step-body">
+                        <h3>Fun Reactions</h3>
+                        <p>Kids laugh, clap and enjoy every magical moment.</p>
+                    </div>
+                </div>
+
+                <div class="exp-step">
+                    <div class="exp-step-dot">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <div class="exp-step-body">
+                        <h3>Live Interaction</h3>
+                        <p>Children become part of the magic show.</p>
+                    </div>
+                </div>
+
+                <div class="exp-step">
+                    <div class="exp-step-dot">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="exp-step-body">
+                        <h3>Surprise Moments</h3>
+                        <p>Unexpected tricks that amaze everyone.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE CONTENT -->
+            <div class="experience-content">
+
+                <p class="section-sub">Magic Experience</p>
+
+                <h2 class="section-title">
+                    <span class="light">Where Fun</span> Meets
+                    <span class="highlight">Magic</span>
+                </h2>
+
+                <p class="exp-text">
+                    Our magic shows are designed to create unforgettable moments
+                    filled with joy, laughter, and excitement for kids of all ages.
+                </p>
+
+                <a href="contact.html" class="exp-btn">
+                    Book Experience
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="magic-types">
+        <div class="container">
+
+            <p class="section-sub">
+                Types of Magic
+            </p>
+
+            <h2 class="section-title center">
+                Discover Our <span class="highlight">Magic Styles</span>
+            </h2>
+
+            <div class="magic-scroll">
+
+                <div class="magic-box">
+                    <img src="images/magic1.jpg" alt="">
+                    <h3>Close-Up Magic</h3>
+                    <p>Small tricks performed right in front of kids.</p>
+                </div>
+
+                <div class="magic-box">
+                    <img src="images/magic2.jpg" alt="">
+                    <h3>Stage Magic</h3>
+                    <p>Big illusions and exciting performances.</p>
+                </div>
+
+                <div class="magic-box">
+                    <img src="images/magic3.jpg" alt="">
+                    <h3>Balloon Magic</h3>
+                    <p>Fun balloon tricks kids will love.</p>
+                </div>
+
+                <div class="magic-box">
+                    <img src="images/magic4.jpg" alt="">
+                    <h3>Comedy Magic</h3>
+                    <p>Funny tricks full of laughter.</p>
+                </div>
+
+                <div class="magic-box">
+                    <img src="images/magic5.jpg" alt="">
+                    <h3>Interactive Magic</h3>
+                    <p>Kids become part of the show.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="show-info">
+        <div class="container">
+            <p class="section-sub">
+                Show Details
+            </p>
+
+            <h2 class="section-title center">
+                Show <span class="highlight">Duration & Setup</span>
+            </h2>
+
+            <div class="show-info-wrapper">
+
+                <!-- LEFT -->
+                <div class="show-left">
+                    <h3><i class="fas fa-clock"></i>
+                        Duration
+                    </h3>
+                    <p>Our magic show runs for <strong>45 minutes to 1 hour</strong> filled with fun and excitement.</p>
+
+                    <h3><i class="fas fa-tools"></i>
+                        Setup Time
+                    </h3>
+                    <p>We require around <strong>20–30 minutes</strong> before the event to set up.</p>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="show-right">
+                    <h3><i class="fas fa-location-dot"></i>
+                        Space Required
+                    </h3>
+                    <p>A small stage or open area is enough for the performance.</p>
+
+                    <h3><i class="fas fa-volume-up"></i>
+                        Equipment
+                    </h3>
+                    <p>We bring all necessary props, sound setup, and materials.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="magic-cta">
+        <div class="container magic-cta-box">
+
+            <p class="section-sub">Let The Magic Begin</p>
+
+            <h2 class="section-title">
+                <span class="light">Make Your Event</span> Truly <span class="highlight">Magical <i
+                        class="fas fa-star inline-icon" aria-hidden="true"></i></span>
+            </h2>
+
+            <p class="magic-cta-text">
+                Tell us your requirements and we will create a fun-filled magic show
+                that kids will love and remember forever.
+            </p>
+
+            <!-- FORM -->
+            <form class="magic-form">
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+
+                <select required>
+                    <option value="">Select Magic Type</option>
+                    <option>Close-Up Magic</option>
+                    <option>Stage Magic</option>
+                    <option>Balloon Magic</option>
+                </select>
+
+                <input type="date" required>
+
+                <button type="submit" class="cta-btn">Book Magic Show</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="logo" class="footer-logo">
+                <h2>Fun Play Kids</h2>
+                <p>Welcome to your new children's entertainment center website!
+                </p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Press / News</h3>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>Free to Express Themselves</strong></p>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>It Was Never Easier to Have Fun</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Information</h3>
+                <p>Party venue center play rules</p>
+                <p>Make your party reservation</p>
+                <p>Our premises</p>
+                <p>Working hours</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-home"></i> 24 The Maples, NY 11576</p>
+                <p><i class="fas fa-envelope"></i> info@funplaykids.com</p>
+                <p><i class="fas fa-phone"></i> +368 / 123 456 7890</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 <span>Fun Play Kids</span>. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+
+
+</body>
+
+</html>

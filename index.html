@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fun Play Kids</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fun Play Kids Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="menu">
+                <li class="dropdown">Home<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">Services<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="birthday.html">Birthday Party</a></li>
+                        <li><a href="magic.html">Magic Show</a></li>
+                        <li><a href="face-painting.html">Face Painting</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">Characters<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="superheroes.html">Superheroes</a></li>
+                        <li><a href="princesses.html">Princesses</a></li>
+                        <li><a href="cartoons.html">Cartoons</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <div class="header-actions">
+                    <button type="button" class="mode-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"><i class="fas fa-moon"></i></span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="mode-toggle rtl-toggle" id="rtl-toggle" aria-label="Toggle RTL mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb rtl-thumb">RTL</span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="login.html" class="login-btn mobile-login">Login</a>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+        <div class="hero-slider">
+
+            <!-- SLIDE 1 -->
+            <div class="slide active">
+                <img src="images/kids.png" class="hero-img">
+                <p class="section-sub">Welcome to</p>
+                <h2 class="section-title">Party Fun Center</h2>
+                <a href="#" class="hero-btn">Read More</a>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="slide">
+                <img src="images/party.png" class="hero-img">
+                <p class="section-sub">Make Every Moment</p>
+                <h2 class="section-title">Magical & Fun</h2>
+                <a href="#" class="hero-btn">Explore</a>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="slide">
+                <img src="images/fun.png" class="hero-img">
+                <p class="section-sub">Celebrate With Us</p>
+                <h2 class="section-title">Unforgettable Parties</h2>
+                <a href="#" class="hero-btn">Book Now</a>
+            </div>
+
+            <button class="arrow prev">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <button class="arrow next">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+
+    <section class="about-section">
+        <div class="container about-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="about-img">
+                <img src="images/kids-party.jpg" alt="kids">
+
+                <div class="invite-card">
+                    <h3>Personal Invites</h3>
+                    <a href="#">Download →</a>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="about-content">
+                <p class="sub">Creating Memories</p>
+                <h2>
+                    <span class="green">Great</span> Fun For <span class="orange">All</span>
+                </h2>
+
+                <p class="desc">
+                    We create joyful experiences with fun activities, decorations, and entertainment
+                    for unforgettable kids parties.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="features">
+
+                    <div class="feature">
+                        <img src="images/ballon.png" alt="">
+                        <p>Colorful Balloons</p>
+                    </div>
+
+                    <div class="feature">
+                        <img src="images/private.png" alt="">
+                        <p>Private Space</p>
+                    </div>
+
+                    <div class="feature">
+                        <img src="images/candy.png" alt="">
+                        <p>Candy Bar Center</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--SERVICES SECTION-->
+
+    <section class="services">
+        <div class="container">
+
+            <p class="section-sub">Welcome Idea</p>
+            <h2 class="section-title">
+                <span class="light">Our</span> Park <span class="highlight">Ultima</span>
+            </h2>
+
+            <div class="services-grid">
+
+                <!-- ITEM 1 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/service1.png" alt="">
+                    </div>
+                    <h3>All Day Fun</h3>
+                    <p>Fun activities that keep kids engaged and happy all day long.</p>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/service2.png" alt="">
+                    </div>
+                    <h3>Birthday Parties</h3>
+                    <p>Make birthdays magical with themes, games and characters.</p>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/service3.png" alt="">
+                    </div>
+                    <h3>Playland & Cafe</h3>
+                    <p>Safe play areas with relaxing space for parents.</p>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/service4.png" alt="">
+                    </div>
+                    <h3>Celebrate & Learn</h3>
+                    <p>Interactive fun learning with creative activities.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--CHARACTERS SECTION-->
+    <section class="characters">
+        <div class="container char-wrapper">
+            <div class="char-images">
+
+                <div class="char-img img1">
+                    <img src="images/mickeymouse.png" alt="">
+                </div>
+
+                <div class="char-img img2">
+                    <img src="images/princess.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="char-content">
+                <h2>Meet Our Cartoon Characters</h2>
+                <p>
+                    Bring your child’s favorite characters to life! From superheroes
+                    to princesses, we create magical party experiences.
+                </p>
+
+                <a href="characters.html" class="char-btn">View All Characters</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="party-moments">
+        <div class="container moments-wrapper">
+            <div class="moments-copy">
+                <p class="section-sub">Little Highlights</p>
+                <h2 class="section-title">
+                    <span class="light">Tiny</span> Party <span class="highlight">Moments</span>
+                </h2>
+                <p class="moments-text">
+                    Every party has its own special spark. We blend games, music, cake time, and playful surprises
+                    to keep children smiling from start to finish.
+                </p>
+
+                <div class="moments-list">
+                    <div class="moment-item">
+                        <strong>Theme Corners</strong>
+                        <p>Mini spaces for dress-up, stories, and creative fun.</p>
+                    </div>
+                    <div class="moment-item">
+                        <strong>Happy Hosts</strong>
+                        <p>Friendly entertainers who keep the energy warm and joyful.</p>
+                    </div>
+                    <div class="moment-item">
+                        <strong>Memory Time</strong>
+                        <p>Fun photo moments your family will love to look back on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moments-board">
+                <div class="moment-note note-one">
+                    <span>12+</span>
+                    <p>games in one fun event</p>
+                </div>
+                <div class="moment-note note-two">
+                    <span>3 hrs</span>
+                    <p>of guided activities and laughter</p>
+                </div>
+                <div class="moment-note note-three">
+                    <span>100%</span>
+                    <p>kid-focused joy and celebration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Packages section-->
+
+    <section class="packages">
+        <div class="container pack-wrapper">
+
+            <div class="pack-content">
+                <h2>Our Fun Packages</h2>
+                <p>
+                    Choose from our exciting party packages designed to bring joy,
+                    fun and unforgettable memories.
+                </p>
+
+                <a href="packages.html" class="pack-btn">View Pricing</a>
+            </div>
+
+            <div class="pack-cards">
+
+                <div class="pack-card">
+                    <h3>Basic</h3>
+                    <p>1 Character</p>
+                </div>
+
+                <div class="pack-card">
+                    <h3>Standard</h3>
+                    <p>2 Characters + Games</p>
+                </div>
+
+                <div class="pack-card premium">
+                    <h3>Premium</h3>
+                    <p>3+ Characters + Full Fun</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--GALLERY SECTION-->
+    <section class="gallery">
+
+        <div class="gallery-top">
+            <img src="images/top-kids.png" alt="Kids">
+        </div>
+
+        <div class="gallery-row row1">
+            <div class="gallery-track">
+                <img src="images/g1.jpg">
+                <img src="images/g2.jpg">
+                <img src="images/g3.jpg">
+                <img src="images/g4.jpg">
+                <img src="images/g5.jpg">
+                <img src="images/g6.jpg">
+
+
+                <img src="images/g1.jpg">
+                <img src="images/g2.jpg">
+                <img src="images/g3.jpg">
+                <img src="images/g4.jpg">
+                <img src="images/g5.jpg">
+                <img src="images/g6.jpg">
+            </div>
+        </div>
+
+        <div class="gallery-row row2">
+            <div class="gallery-track">
+                <img src="images/g7.jpg">
+                <img src="images/g8.jpg">
+                <img src="images/g9.jpg">
+                <img src="images/g10.jpg">
+                <img src="images/g11.jpg">
+                <img src="images/g12.jpg">
+
+                <img src="images/g7.jpg">
+                <img src="images/g8.jpg">
+                <img src="images/g9.jpg">
+                <img src="images/g10.jpg">
+                <img src="images/g11.jpg">
+                <img src="images/g12.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="party-journey">
+        <div class="container journey-wrapper">
+            <div class="journey-heading">
+                <p class="section-sub">From Start To Smile</p>
+                <h2 class="section-title">
+                    <span class="light">Your</span> Party <span class="highlight">Journey</span>
+                </h2>
+            </div>
+
+            <div class="journey-steps">
+                <div class="journey-step">
+                    <span class="journey-no">01</span>
+                    <h3>Share Your Idea</h3>
+                    <p>Tell us the theme, age group, and the kind of fun your child loves.</p>
+                </div>
+                <div class="journey-step">
+                    <span class="journey-no">02</span>
+                    <h3>We Build The Plan</h3>
+                    <p>We match activities, decor, and characters to create one playful setup.</p>
+                </div>
+                <div class="journey-step">
+                    <span class="journey-no">03</span>
+                    <h3>Celebrate The Day</h3>
+                    <p>On party day, we handle the energy so families can enjoy every moment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta">
+
+        <img src="images/plane.png" class="cta-decor plane">
+        <img src="images/heartballon.png" class="cta-decor balloon">
+
+        <div class="cta-icon">
+            <img src="images/birdhouse.png" alt="">
+        </div>
+
+        <h2>Make Your Child’s Dream Party Come True</h2>
+
+        <p>
+            Create unforgettable moments with fun, laughter, and magical celebrations.
+        </p>
+
+        <a href="contact.html" class="cta-btn">Book Now</a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="logo" class="footer-logo">
+                <h2>Fun Play Kids</h2>
+                <p>Welcome to your new children's entertainment center website!
+                </p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Press / News</h3>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>Free to Express Themselves</strong></p>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>It Was Never Easier to Have Fun</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Information</h3>
+                <p>Party venue center play rules</p>
+                <p>Make your party reservation</p>
+                <p>Our premises</p>
+                <p>Working hours</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-home"></i> 24 The Maples, NY 11576</p>
+                <p><i class="fas fa-envelope"></i> info@funplaykids.com</p>
+                <p><i class="fas fa-phone"></i> +368 / 123 456 7890</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 <span>Fun Play Kids</span>. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

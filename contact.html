@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fun Play Kids</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fun Play Kids Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="menu">
+                <li class="dropdown">Home<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">Services<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="birthday.html">Birthday Party</a></li>
+                        <li><a href="magic.html">Magic Show</a></li>
+                        <li><a href="face-painting.html">Face Painting</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">Characters<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="superheroes.html">Superheroes</a></li>
+                        <li><a href="princesses.html">Princesses</a></li>
+                        <li><a href="cartoons.html">Cartoons</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <div class="header-actions">
+                    <button type="button" class="mode-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"><i class="fas fa-moon"></i></span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="mode-toggle rtl-toggle" id="rtl-toggle" aria-label="Toggle RTL mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb rtl-thumb">RTL</span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="login.html" class="login-btn mobile-login">Login</a>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Get in <span class="orange">Touch</span></h2>
+            <p>We would love to plan your child's perfect celebration.</p>
+        </div>
+    </section>
+
+
+    <section class="work-section">
+        <div class="container work-wrapper">
+
+            <!-- LEFT SIDE -->
+            <div class="work-left">
+                <p class="section-sub">Check out our</p>
+                <h2>
+                    <span class="green">Work</span> Hours &
+                    <span class="orange">Days</span>
+                </h2>
+
+                <div class="work-list">
+
+                    <div class="work-item">
+                        <span>Mon - Wed</span>
+                        <span>9:00 AM - 12:00 PM</span>
+                    </div>
+
+                    <div class="work-item">
+                        <span>Thu - Fri</span>
+                        <span>9:00 AM - 12:00 PM</span>
+                    </div>
+
+                    <div class="work-item">
+                        <span>Saturday</span>
+                        <span>9:00 AM - 12:00 PM</span>
+                    </div>
+
+                    <div class="work-item">
+                        <span>Sunday</span>
+                        <span class="closed">CLOSED</span>
+                    </div>
+
+                </div>
+
+                <p class="work-note">
+                    * Flexible timings available for special events.
+                </p>
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="calendar-box">
+
+                <div class="calendar-header">
+                    <button type="button" class="calendar-nav-btn" id="calendar-prev" aria-label="Previous month">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="calendar-month">April 2026</h3>
+                    <button type="button" class="calendar-nav-btn" id="calendar-next" aria-label="Next month">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="calendar-days">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                </div>
+
+                <div class="calendar-dates" id="calendar-dates"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container info-wrapper">
+
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-phone"></i></div>
+                <h3>Call Us</h3>
+                <p>Speak with our team for bookings, package details, and quick event support.</p>
+                <span>+91 98765 43210</span>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email Us</h3>
+                <p>Send your ideas, preferred date, and questions and we will get back to you soon.</p>
+                <span>info@funplaykids.com</span>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Visit Us</h3>
+                <p>Find us in Chennai and explore a cheerful space designed for fun family celebrations.</p>
+                <span>Chennai, Tamil Nadu</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact-form">
+        <div class="container form-wrapper">
+
+            <!-- LEFT -->
+            <div class="form-text">
+                <h2>Send us a <span class="green">Message</span></h2>
+                <p>Tell us about your event and we will help shape it into a smooth, joyful celebration.</p>
+                <p>Share your preferred date, party type, guest count, and any special ideas you want us to include.</p>
+            </div>
+
+            <!-- RIGHT -->
+            <form class="form-box">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Event Type">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps?q=Chennai,+Tamil+Nadu&z=12&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+        </iframe>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="logo" class="footer-logo">
+                <h2>Fun Play Kids</h2>
+                <p>Welcome to your new children's entertainment center website!
+                </p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Press / News</h3>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>Free to Express Themselves</strong></p>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>It Was Never Easier to Have Fun</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Information</h3>
+                <p>Party venue center play rules</p>
+                <p>Make your party reservation</p>
+                <p>Our premises</p>
+                <p>Working hours</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-home"></i> 24 The Maples, NY 11576</p>
+                <p><i class="fas fa-envelope"></i> info@funplaykids.com</p>
+                <p><i class="fas fa-phone"></i> +368 / 123 456 7890</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 <span>Fun Play Kids</span>. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

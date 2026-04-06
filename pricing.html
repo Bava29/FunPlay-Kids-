@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fun Play Kids</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fun Play Kids Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="menu">
+                <li class="dropdown">Home<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">Services<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="birthday.html">Birthday Party</a></li>
+                        <li><a href="magic.html">Magic Show</a></li>
+                        <li><a href="face-painting.html">Face Painting</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">Characters<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="superheroes.html">Superheroes</a></li>
+                        <li><a href="princesses.html">Princesses</a></li>
+                        <li><a href="cartoons.html">Cartoons</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <div class="header-actions">
+                    <button type="button" class="mode-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"><i class="fas fa-moon"></i></span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="mode-toggle rtl-toggle" id="rtl-toggle" aria-label="Toggle RTL mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb rtl-thumb">RTL</span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="login.html" class="login-btn mobile-login">Login</a>
+
+            </ul>
+
+        </div>
+    </header>
+
+
+
+    <section class="contact-hero">
+        <div class="container">
+
+            <h2>
+                Pricing <span class="orange">Plans</span>
+            </h2>
+
+            <p>
+                Flexible and affordable pricing plans designed to make every celebration fun,
+                memorable, and perfectly suited to your budget.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="price-intro">
+        <div class="container">
+
+            <p class="section-sub">Check Out Our</p>
+
+            <h2 class="section-title center">
+                Event <span class="highlight">Pricing Plans</span>
+            </h2>
+
+            <div class="price-intro-cards">
+
+                <!-- BASIC -->
+                <div class="price-intro-card">
+                    <div class="price-badge">&#8377; Basic</div>
+
+                    <h3>Basic Plan</h3>
+                    <p>Perfect for small celebrations with essential fun activities.</p>
+
+                    <a href="#birthday" class="cta-btn">View Plans</a>
+                </div>
+
+                <!-- STANDARD -->
+                <div class="price-intro-card">
+                    <div class="price-badge">&#8377; Standard</div>
+
+                    <h3>Standard Plan</h3>
+                    <p>Balanced package with more activities and exciting features.</p>
+
+                    <a href="#birthday" class="cta-btn">View Plans</a>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="price-intro-card active">
+                    <div class="price-badge">&#8377; Premium</div>
+
+                    <h3>Premium Plan</h3>
+                    <p>Complete experience with all services and full entertainment.</p>
+
+                    <a href="#birthday" class="cta-btn">View Plans</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pricing-birthday" id="birthday">
+        <div class="container pricing-birthday-shell">
+            <div class="pricing-heading-block">
+                <p class="section-sub">Birthday Party Pricing</p>
+                <h2 class="section-title">
+                    <span class="light">Choose A</span> Birthday Package That Fits <span class="highlight">Your Celebration</span>
+                </h2>
+                <p class="pricing-section-text">
+                    Friendly birthday packages with flexible add-ons, cheerful decor, and guided fun for different party sizes.
+                </p>
+            </div>
+
+            <div class="pricing-birthday-grid">
+                <article class="pricing-sheet">
+                    <span class="pricing-sticker">Starter</span>
+                    <h3>Mini Joy</h3>
+                    <div class="pricing-value">&#8377; 8,999</div>
+                    <p>Best for cozy celebrations with essential decor and guided fun.</p>
+                    <ul>
+                        <li>2 hours of party access</li>
+                        <li>Theme corner setup</li>
+                        <li>1 host-led activity</li>
+                        <li>Music and photo moments</li>
+                    </ul>
+                </article>
+
+                <article class="pricing-sheet pricing-sheet-featured">
+                    <span class="pricing-sticker">Popular</span>
+                    <h3>Happy Crowd</h3>
+                    <div class="pricing-value">&#8377; 14,499</div>
+                    <p>A balanced package with more decor touches, games, and interactive moments.</p>
+                    <ul>
+                        <li>3 hours of celebration time</li>
+                        <li>Decor and welcome arch</li>
+                        <li>2 entertainer-led activities</li>
+                        <li>Cake area styling</li>
+                    </ul>
+                </article>
+
+                <article class="pricing-sheet">
+                    <span class="pricing-sticker">Premium</span>
+                    <h3>Grand Smile</h3>
+                    <div class="pricing-value">&#8377; 21,999</div>
+                    <p>A fuller birthday experience with extra styling, games, and event coordination.</p>
+                    <ul>
+                        <li>4 hours of guided fun</li>
+                        <li>Premium decor styling</li>
+                        <li>Character welcome entry</li>
+                        <li>Game zone and return gifts desk</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-magic">
+        <div class="container pricing-magic-layout">
+            <div class="pricing-magic-intro">
+                <p class="section-sub">Magic Show Pricing</p>
+                <h2 class="section-title">
+                    <span class="light">Magical Plans</span> For Every <span class="highlight">Party Mood</span>
+                </h2>
+                <p class="pricing-section-text">
+                    Pick the show format that matches your space, guest count, and the kind of surprise you want to create.
+                    From quick stage moments to fuller interactive sets, each option is designed to keep children curious,
+                    engaged, and smiling through the whole performance.
+                </p>
+                <div class="pricing-spark-cluster" aria-hidden="true">
+                    <i class="fas fa-star pricing-spark spark-one"></i>
+                    <i class="fas fa-star pricing-spark spark-two"></i>
+                    <i class="fas fa-star pricing-spark spark-three"></i>
+                </div>
+            </div>
+
+            <div class="pricing-magic-board">
+                <article class="magic-rate-card">
+                    <h3>Quick Spark Show</h3>
+                    <strong>&#8377; 6,500</strong>
+                    <p>Short-format magic fun for smaller birthdays and indoor celebrations.</p>
+                </article>
+                <article class="magic-rate-card">
+                    <h3>Stage Magic Set</h3>
+                    <strong>&#8377; 11,500</strong>
+                    <p>Longer interactive show with crowd moments, props, and fun audience participation.</p>
+                </article>
+                <article class="magic-rate-card">
+                    <h3>Magic Plus Balloon Combo</h3>
+                    <strong>&#8377; 15,500</strong>
+                    <p>A playful combo with magic tricks, balloon fun, and extra cheerful engagement.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-booking">
+        <div class="container pricing-booking-wrap">
+            <div class="pricing-booking-note">
+                <p class="section-sub">Whole Booking Pricing</p>
+                <h2 class="section-title">
+                    <span class="light">Full Event</span> Booking Made <span class="highlight">Simple</span>
+                </h2>
+                <p class="pricing-section-text">
+                    When you want decor, entertainment, coordination, and guest flow handled together, our full booking plans make it easier.
+                    These options are ideal for families who want a smoother event flow, clearer planning support, and one
+                    cheerful team handling the bigger celebration details from start to finish.
+                </p>
+            </div>
+
+            <div class="pricing-booking-list">
+                <article class="booking-line">
+                    <div>
+                        <h3>Half-Day Celebration</h3>
+                        <p>Ideal for compact family events with decor, host support, and key activities.</p>
+                    </div>
+                    <strong>&#8377; 24,999</strong>
+                </article>
+
+                <article class="booking-line">
+                    <div>
+                        <h3>Signature Event Booking</h3>
+                        <p>Best for bigger parties that need games, decor styling, performers, and planning help.</p>
+                    </div>
+                    <strong>&#8377; 38,999</strong>
+                </article>
+
+                <article class="booking-line">
+                    <div>
+                        <h3>Custom Full-Day Experience</h3>
+                        <p>Tailored booking with multiple zones, stage moments, and complete event assistance.</p>
+                    </div>
+                    <strong>Custom Quote</strong>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-cta">
+        <div class="container pricing-cta-layout">
+            <div class="pricing-cta-copy">
+                <p class="section-sub">Request A Quote</p>
+                <h2 class="section-title">
+                    <span class="light">Tell Us</span> What You Need And We Will Send A <span class="highlight">Playful Plan</span>
+                </h2>
+                <p class="pricing-section-text">
+                    Share your event type, estimated guest count, and preferred service. We will suggest a package that matches your celebration and budget.
+                </p>
+            </div>
+
+            <form class="pricing-quote-form">
+                <div class="quote-stars" aria-hidden="true">
+                    <i class="fas fa-star pricing-spark spark-four"></i>
+                    <i class="fas fa-star pricing-spark spark-five"></i>
+                </div>
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option>Birthday Party</option>
+                    <option>Magic Show</option>
+                    <option>Full Event Booking</option>
+                </select>
+                <textarea placeholder="Tell us your event idea"></textarea>
+                <button type="submit" class="cta-btn">Get Pricing Details</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="logo" class="footer-logo">
+                <h2>Fun Play Kids</h2>
+                <p>Welcome to your new children's entertainment center website!
+                </p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Press / News</h3>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>Free to Express Themselves</strong></p>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>It Was Never Easier to Have Fun</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Information</h3>
+                <p>Party venue center play rules</p>
+                <p>Make your party reservation</p>
+                <p>Our premises</p>
+                <p>Working hours</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-home"></i> 24 The Maples, NY 11576</p>
+                <p><i class="fas fa-envelope"></i> info@funplaykids.com</p>
+                <p><i class="fas fa-phone"></i> +368 / 123 456 7890</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 <span>Fun Play Kids</span>. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/characters.js"></script>
+
+
+</body>
+
+</html>

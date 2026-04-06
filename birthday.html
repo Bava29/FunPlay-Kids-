@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fun Play Kids</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Fun Play Kids Logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="menu">
+                <li class="dropdown">Home<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">Services<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="birthday.html">Birthday Party</a></li>
+                        <li><a href="magic.html">Magic Show</a></li>
+                        <li><a href="face-painting.html">Face Painting</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">Characters<i class="fas fa-chevron-down"></i>
+
+                    <ul class="submenu">
+                        <li><a href="superheroes.html">Superheroes</a></li>
+                        <li><a href="princesses.html">Princesses</a></li>
+                        <li><a href="cartoons.html">Cartoons</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <div class="header-actions">
+                    <button type="button" class="mode-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"><i class="fas fa-moon"></i></span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="mode-toggle rtl-toggle" id="rtl-toggle" aria-label="Toggle RTL mode">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb rtl-thumb">RTL</span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="login.html" class="login-btn mobile-login">Login</a>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Birthday <span class="orange">Party</span></h2>
+            <p>Discover joyful birthday celebrations filled with themes, fun, and unforgettable moments.</p>
+        </div>
+    </section>
+
+    <section class="birthday-themes">
+        <div class="container">
+            <div class="birthday-themes-heading">
+                <p class="section-sub">Party Themes</p>
+                <h2 class="section-title">
+                    <span class="light">Pick Your</span> Favorite <span class="highlight">Theme</span>
+                </h2>
+                <p class="birthday-themes-text">
+                    Choose from joyful setups made for every kind of birthday celebration, from dreamy princess decor
+                    to energetic superhero fun.
+                </p>
+            </div>
+
+            <div class="birthday-themes-grid">
+                <article class="birthday-theme-card">
+                    <img src="images/classic-party.jpg" alt="Classic birthday theme">
+                    <div class="birthday-theme-info">
+                        <h3>Classic Birthday</h3>
+                        <p>Bright balloons, cake tables, and cheerful decor for a timeless party feel.</p>
+                    </div>
+                </article>
+
+                <article class="birthday-theme-card">
+                    <img src="images/princess-party.jpg" alt="Princess party theme">
+                    <div class="birthday-theme-info">
+                        <h3>Princess Dream</h3>
+                        <p>Soft colors, royal styling, and magical details for little queens.</p>
+                    </div>
+                </article>
+
+                <article class="birthday-theme-card">
+                    <img src="images/superhero-party.jpg" alt="Superhero party theme">
+                    <div class="birthday-theme-info">
+                        <h3>Superhero Blast</h3>
+                        <p>Bold action-inspired fun with games and exciting adventure energy.</p>
+                    </div>
+                </article>
+
+                <article class="birthday-theme-card">
+                    <img src="images/cartoon-party.jpg" alt="Cartoon party theme">
+                    <div class="birthday-theme-info">
+                        <h3>Cartoon Fun</h3>
+                        <p>Favorite character-inspired setups with playful colors and smiles.</p>
+                    </div>
+                </article>
+
+                <article class="birthday-theme-card">
+                    <img src="images/play-party.jpg" alt="Play zone theme">
+                    <div class="birthday-theme-info">
+                        <h3>Play Zone Party</h3>
+                        <p>Interactive corners, games, and active fun for energetic celebrations.</p>
+                    </div>
+                </article>
+
+                <article class="birthday-theme-card">
+                    <img src="images/creative-party.jpg" alt="Creative theme">
+                    <div class="birthday-theme-info">
+                        <h3>Creative Celebration</h3>
+                        <p>Crafts, colors, and hands-on playful activities for curious little minds.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="party-experience">
+        <div class="container party-experience-wrapper">
+            <div class="party-experience-content">
+                <p class="section-sub">Our Party Experience</p>
+                <h2 class="section-title">
+                    <span class="light">More Than</span> Just A <span class="highlight">Birthday</span>
+                </h2>
+                <p class="party-experience-text">
+                    We create birthdays that feel joyful from the first welcome to the final cake moment.
+                    Every detail is planned to keep children smiling and families feeling relaxed.
+                </p>
+
+                <div class="party-experience-points">
+                    <div class="experience-point">
+                        <h3>Fun Welcome</h3>
+                        <p>Warm greetings, bright decor, and a happy start for every child.</p>
+                    </div>
+                    <div class="experience-point">
+                        <h3>Guided Activities</h3>
+                        <p>Games, movement, and playful moments planned throughout the event.</p>
+                    </div>
+                    <div class="experience-point">
+                        <h3>Sweet Finish</h3>
+                        <p>Cake, photos, and special closing moments everyone remembers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="party-experience-highlight">
+                <div class="experience-badge">
+                    <span>3 hrs</span>
+                    <p>of guided joy and celebration</p>
+                </div>
+                <div class="experience-card">
+                    <img src="images/kids-party2.jpg" alt="Birthday party celebration">
+                    <div class="experience-card-text">
+                        <h3>Happy Moments</h3>
+                        <p>Color, laughter, games, and a joyful atmosphere in every celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customization-options">
+        <div class="container customization-wrapper">
+            <div class="customization-heading">
+                <p class="section-sub">Customization Options</p>
+                <h2 class="section-title">
+                    <span class="light">Build Your</span> Perfect <span class="highlight">Celebration</span>
+                </h2>
+                <p class="customization-text">
+                    Mix and match details to create a birthday setup that feels personal, playful, and just right for
+                    your child. From decor choices to activity planning, each element can be shaped around your
+                    celebration style. It is a simple way to build a party that feels more meaningful, colorful, and
+                    memorable for your family.
+                </p>
+            </div>
+
+            <div class="customization-grid">
+                <div class="custom-option">
+                    <h3>Theme Decor</h3>
+                    <p>Choose colors, balloons, table styling, and character-based backdrops.</p>
+                </div>
+                <div class="custom-option">
+                    <h3>Activity Add-ons</h3>
+                    <p>Add crafts, games, music, dance time, or face painting for extra fun.</p>
+                </div>
+                <div class="custom-option">
+                    <h3>Cake & Treats</h3>
+                    <p>Personalize sweet corners with cake moments, snacks, and dessert tables.</p>
+                </div>
+                <div class="custom-option">
+                    <h3>Special Entry</h3>
+                    <p>Create a grand welcome with music, props, and themed entrance styling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-slot">
+        <div class="container book-slot-wrapper">
+            <div class="book-slot-content">
+                <p class="section-sub">Availability / Book Slot</p>
+                <h2 class="section-title">
+                    <span class="light">Reserve</span> Your <span class="highlight">Perfect Date</span>
+                </h2>
+                <p class="book-slot-text">
+                    Tell us your preferred day, time, and celebration style. We will help you lock in a slot that
+                    works best for your family and your little one's big day.
+                </p>
+
+                <div class="book-slot-points">
+                    <div class="book-slot-point">
+                        <strong>Flexible Time Slots</strong>
+                        <p>Morning, afternoon, and evening party options based on availability.</p>
+                    </div>
+                    <div class="book-slot-point">
+                        <strong>Quick Confirmation</strong>
+                        <p>Fast response and simple coordination for stress-free birthday planning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-slot-card">
+                <div class="slot-row">
+                    <span>Date</span>
+                    <strong>12 April 2026</strong>
+                </div>
+                <div class="slot-row">
+                    <span>Time</span>
+                    <strong>4:00 PM - 7:00 PM</strong>
+                </div>
+                <div class="slot-row">
+                    <span>Theme</span>
+                    <strong>Princess Dream</strong>
+                </div>
+                <div class="slot-row">
+                    <span>Guests</span>
+                    <strong>25 Kids</strong>
+                </div>
+                <a href="contact.html" class="cta-btn">Book Your Slot</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="birthday-cta">
+        <div class="container birthday-cta-box">
+
+            <p class="section-sub">Let The Fun Begin</p>
+
+            <h2 class="section-title">
+                <span class="light">Plan A</span> Birthday Full Of
+                <span class="highlight">Joy <i class="fas fa-icons inline-icon" aria-hidden="true"></i></span>
+            </h2>
+
+            <p class="birthday-cta-text">
+                Share your ideas with us and we will help turn them into a colorful
+                celebration your child will never forget.
+            </p>
+
+            <!-- FORM -->
+            <form class="birthday-form">
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+
+                <select required>
+                    <option value="">Select Party Theme</option>
+                    <option>Princess Dream</option>
+                    <option>Superhero Adventure</option>
+                    <option>Space Explorer</option>
+                </select>
+
+                <input type="date" required>
+
+                <button type="submit" class="cta-btn">
+                    Book Birthday Party
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="logo" class="footer-logo">
+                <h2>Fun Play Kids</h2>
+                <p>Welcome to your new children's entertainment center website!
+                </p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Press / News</h3>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>Free to Express Themselves</strong></p>
+
+                <p class="date">MAY 27, 2020</p>
+                <p><strong>It Was Never Easier to Have Fun</strong></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Information</h3>
+                <p>Party venue center play rules</p>
+                <p>Make your party reservation</p>
+                <p>Our premises</p>
+                <p>Working hours</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-home"></i> 24 The Maples, NY 11576</p>
+                <p><i class="fas fa-envelope"></i> info@funplaykids.com</p>
+                <p><i class="fas fa-phone"></i> +368 / 123 456 7890</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 <span>Fun Play Kids</span>. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+
+
+</body>
+
+</html>
