@@ -195,6 +195,62 @@ function initPackCards() {
     cards.forEach((card) => observer.observe(card));
 }
 
+function initHorizontalScrollButtons() {
+    const scrollers = document.querySelectorAll(".magic-scroll, .fp-scroll, .character-scroll");
+    if (!scrollers.length) return;
+
+    scrollers.forEach((scroller) => {
+        if (scroller.dataset.navReady === "true") return;
+
+        let title = scroller.previousElementSibling;
+        while (title && !title.matches("h2.section-title")) {
+            title = title.previousElementSibling;
+        }
+
+        if (!title) return;
+
+        const navBar = document.createElement("div");
+        navBar.className = "scroll-title-bar";
+
+        const leftBtn = document.createElement("button");
+        leftBtn.type = "button";
+        leftBtn.className = "scroll-nav-btn scroll-nav-btn-left";
+        leftBtn.setAttribute("aria-label", "Scroll left");
+        leftBtn.innerHTML = '<i class="fas fa-arrow-left"></i>';
+
+        const rightBtn = document.createElement("button");
+        rightBtn.type = "button";
+        rightBtn.className = "scroll-nav-btn scroll-nav-btn-right";
+        rightBtn.setAttribute("aria-label", "Scroll right");
+        rightBtn.innerHTML = '<i class="fas fa-arrow-right"></i>';
+
+        title.parentNode.insertBefore(navBar, title);
+        navBar.append(leftBtn, title, rightBtn);
+
+        const updateButtons = () => {
+            const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+            leftBtn.disabled = scroller.scrollLeft <= 4;
+            rightBtn.disabled = scroller.scrollLeft >= maxScroll - 4;
+        };
+
+        const scrollAmount = () => Math.max(260, Math.round(scroller.clientWidth * 0.75));
+
+        leftBtn.addEventListener("click", () => {
+            scroller.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+        });
+
+        rightBtn.addEventListener("click", () => {
+            scroller.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+        });
+
+        scroller.addEventListener("scroll", updateButtons, { passive: true });
+        window.addEventListener("resize", updateButtons);
+
+        scroller.dataset.navReady = "true";
+        updateButtons();
+    });
+}
+
 function initPasswordToggle() {
     const toggleEye = document.querySelector(".toggle-eye");
     if (!toggleEye) return;
@@ -227,6 +283,49 @@ function initRegisterSuccess() {
         setTimeout(() => {
             registerSuccess.classList.remove("show");
         }, 2500);
+    });
+}
+
+function initCtaFormSuccessPopups() {
+    const forms = document.querySelectorAll(".birthday-form, .magic-form, .fp-form, .character-form");
+    if (!forms.length) return;
+
+    forms.forEach((form) => {
+        let popup = form.nextElementSibling;
+        if (!popup || !popup.classList.contains("success-popup")) {
+            popup = document.createElement("div");
+            popup.className = "success-popup";
+            popup.textContent = "Booked successfully";
+            form.insertAdjacentElement("afterend", popup);
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            popup.classList.add("show");
+            form.reset();
+
+            clearTimeout(form.__successPopupTimeout);
+            form.__successPopupTimeout = setTimeout(() => {
+                popup.classList.remove("show");
+            }, 2500);
+        });
+    });
+}
+
+function initEmptyFieldStates() {
+    const fields = document.querySelectorAll(
+        ".birthday-form select, .birthday-form input[type='date'], .magic-form select, .magic-form input[type='date'], .fp-form select, .fp-form input[type='date'], .pricing-quote-form select, .pricing-quote-form input[type='date'], .character-form select, .character-form input[type='date']"
+    );
+    if (!fields.length) return;
+
+    const syncEmptyState = (field) => {
+        field.classList.toggle("is-empty", !field.value);
+    };
+
+    fields.forEach((field) => {
+        syncEmptyState(field);
+        field.addEventListener("change", () => syncEmptyState(field));
+        field.addEventListener("input", () => syncEmptyState(field));
     });
 }
 
@@ -486,8 +585,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initMenu();
     initHeroSlider();
     initPackCards();
+    initHorizontalScrollButtons();
     initPasswordToggle();
     initRegisterSuccess();
+    initCtaFormSuccessPopups();
+    initEmptyFieldStates();
     initCalendar();
     initMediaHoverEnhancements();
     initRevealAnimations();
@@ -495,4 +597,22 @@ document.addEventListener("DOMContentLoaded", () => {
     initCurrentPageMenuState();
     initPageTransitions();
     finishPageLoading();
+});
+
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
