@@ -5400,6 +5400,8 @@ html[dir="rtl"] .contact-form {
 .birthday-form .cta-btn {
     width: 100%;
     margin-top: 10px;
+    background: transparent;
+    appearance: none;
 }
 
 /* FOCUS EFFECT */
@@ -6091,6 +6093,8 @@ body.dark-mode .exp-text {
 .magic-form .cta-btn {
     width: 100%;
     margin-top: 10px;
+    background: transparent;
+    appearance: none;
 }
 
 .magic-form input,
@@ -6399,6 +6403,8 @@ body.dark-mode .exp-text {
 .fp-form .cta-btn {
     width: 100%;
     margin-top: 10px;
+    background: transparent;
+    appearance: none;
 }
 
 /* FOCUS */
@@ -7506,6 +7512,22 @@ body.dark-mode .flow-card p {
 .character-form .cta-btn {
     width: 100%;
     margin-top: 8px;
+    background: transparent;
+    appearance: none;
+}
+
+.pricing-quote-form .cta-btn {
+    background: transparent;
+    appearance: none;
+}
+
+.birthday-form .cta-btn:hover,
+.magic-form .cta-btn:hover,
+.fp-form .cta-btn:hover,
+.pricing-quote-form .cta-btn:hover,
+.character-form .cta-btn:hover {
+    background: var(--secondary);
+    color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -8339,7 +8361,7 @@ div {
     }
 
     .logo {
-        margin-left: 0;
+        margin-left: -20px;
     }
 
     .menu-toggle {
@@ -8473,6 +8495,10 @@ div {
 }
 
 @media (max-width: 768px) {
+
+    .logo {
+        margin-left: -24px;
+    }
 
     .our-story {
         padding: 60px 20px;
