@@ -1729,6 +1729,14 @@ html[dir="rtl"] .menu {
     margin-right: 20px;
 }
 
+html[dir="rtl"] .menu>.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 6px;
+}
+
 html[dir="rtl"] .header-actions {
     direction: ltr;
     margin-left: 7px;
@@ -1736,12 +1744,12 @@ html[dir="rtl"] .header-actions {
 }
 
 html[dir="rtl"] .login-btn {
-    margin-left: 16px;
+    margin-left: 12px;
     margin-right: 0;
 }
 
 html[dir="rtl"] .dropdown i {
-    margin-left: 12px;
+    margin-left: 16px;
     margin-right: 0;
 }
 
@@ -1759,6 +1767,10 @@ html[dir="rtl"] .submenu {
     left: auto;
     right: 0;
     text-align: right;
+}
+
+html[dir="rtl"] .menu>.dropdown>.submenu {
+    width: 100%;
 }
 
 html[dir="rtl"] .moments-wrapper,
@@ -8476,7 +8488,7 @@ div {
     }
 
     html[dir="rtl"] .menu li {
-        padding-right: 8px;
+        padding-right: 12px;
     }
 
     html[dir="rtl"] .submenu {
