@@ -329,6 +329,41 @@ function initEmptyFieldStates() {
     });
 }
 
+function initDateInputPlaceholders() {
+    const dateFields = document.querySelectorAll(
+        ".birthday-form input[type='date'], .magic-form input[type='date'], .fp-form input[type='date'], .character-form input[type='date'], .pricing-quote-form input[type='date']"
+    );
+    if (!dateFields.length) return;
+
+    const syncDateField = (field) => {
+        if (field.value) {
+            if (field.type !== "date") field.type = "date";
+            field.classList.remove("date-placeholder");
+        } else {
+            field.type = "text";
+            field.placeholder = "dd/mm/yyyy";
+            field.classList.add("date-placeholder");
+        }
+    };
+
+    dateFields.forEach((field) => {
+        syncDateField(field);
+
+        field.addEventListener("focus", () => {
+            field.type = "date";
+            field.classList.remove("date-placeholder");
+        });
+
+        field.addEventListener("blur", () => {
+            syncDateField(field);
+        });
+
+        field.addEventListener("change", () => {
+            syncDateField(field);
+        });
+    });
+}
+
 function initCalendar() {
     const calendarMonth = document.getElementById("calendar-month");
     const calendarDates = document.getElementById("calendar-dates");
@@ -590,6 +625,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initRegisterSuccess();
     initCtaFormSuccessPopups();
     initEmptyFieldStates();
+    initDateInputPlaceholders();
     initCalendar();
     initMediaHoverEnhancements();
     initRevealAnimations();
