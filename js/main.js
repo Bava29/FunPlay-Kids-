@@ -556,9 +556,11 @@ function initCurrentPageMenuState() {
     topItems.forEach((item) => item.classList.remove("current"));
     submenuItems.forEach((item) => item.classList.remove("current"));
 
-    const findTopItem = (label) =>
+    const findTopItem = (label, href) =>
         topItems.find((item) => {
             const link = item.querySelector(":scope > a");
+            const linkHref = link?.getAttribute("href")?.toLowerCase();
+            if (href && linkHref === href) return true;
             const text = (link ? link.textContent : item.childNodes[0]?.textContent || "").trim().toLowerCase();
             return text === label;
         });
@@ -569,8 +571,8 @@ function initCurrentPageMenuState() {
     const pageMenuMap = {
         "index.html": { top: "home", sub: "index.html" },
         "home2.html": { top: "home", sub: "home2.html" },
-        "about.html": { top: "about us" },
-        "contact.html": { top: "contact" },
+        "about.html": { top: "about us", topHref: "about.html" },
+        "contact.html": { top: "contact", topHref: "contact.html" },
         "birthday.html": { top: "services", sub: "birthday.html" },
         "magic.html": { top: "services", sub: "magic.html" },
         "face-painting.html": { top: "services", sub: "face-painting.html" },
@@ -583,7 +585,7 @@ function initCurrentPageMenuState() {
     const currentMenu = pageMenuMap[currentPath];
     if (!currentMenu) return;
 
-    findTopItem(currentMenu.top)?.classList.add("current");
+    findTopItem(currentMenu.top, currentMenu.topHref)?.classList.add("current");
 
     if (currentMenu.sub) {
         findSubmenuItem(currentMenu.sub)?.classList.add("current");
