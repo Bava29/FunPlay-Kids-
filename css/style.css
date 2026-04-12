@@ -1267,6 +1267,19 @@ body.dark-mode .character-form option {
     background: #2a313b;
 }
 
+body.dark-mode .birthday-form select,
+body.dark-mode .magic-form select,
+body.dark-mode .fp-form select,
+body.dark-mode .pricing-quote-form select,
+body.dark-mode .character-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23f2eee9' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #97a3af;
@@ -1395,6 +1408,10 @@ body.dark-mode .moment-note p {
 
 body.dark-mode .pack-card h3::after {
     color: #f4b07c;
+}
+
+body.dark-mode .pack-cards::before {
+    display: none;
 }
 
 body.dark-mode .moment-item {
@@ -1790,6 +1807,12 @@ body.dark-mode .fp-form select {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+body.dark-mode .character-form select {
+    background: #2a313b url("data:image/svg+xml;utf8,<svg fill='%23f2eee9' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>") no-repeat right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
 html[dir="rtl"] body {
     direction: rtl;
 }
@@ -1873,12 +1896,75 @@ html[dir="rtl"] .our-story-wrapper {
     direction: ltr;
 }
 
+html[dir="rtl"] .about-content {
+    text-align: right;
+    align-items: flex-end;
+}
+
+html[dir="rtl"] .about-content .sub,
+html[dir="rtl"] .about-content h2,
+html[dir="rtl"] .about-content .desc {
+    text-align: right;
+}
+
+html[dir="rtl"] .about-content .desc {
+    margin-left: 0;
+}
+
+html[dir="rtl"] .about-container .features {
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .about-container .feature {
+    align-items: flex-end;
+    text-align: right;
+}
+
+html[dir="rtl"] .about-container .invite-card {
+    left: auto;
+    right: 30px;
+}
+
 html[dir="rtl"] .moments-copy,
 html[dir="rtl"] .story-content,
 html[dir="rtl"] .why-choose-content,
 html[dir="rtl"] .contact-content,
 html[dir="rtl"] .contact-form-wrap {
     margin-right: 0;
+}
+
+html[dir="rtl"] .our-story-wrapper {
+    direction: ltr;
+}
+
+html[dir="rtl"] .story-content,
+html[dir="rtl"] .story-content .section-sub,
+html[dir="rtl"] .story-content .section-title,
+html[dir="rtl"] .story-text {
+    text-align: right;
+}
+
+html[dir="rtl"] .story-points {
+    direction: rtl;
+}
+
+html[dir="rtl"] .exp-timeline {
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+html[dir="rtl"] .exp-timeline-line {
+    left: auto;
+    right: 40px;
+}
+
+html[dir="rtl"] .exp-step {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .exp-step-body,
+html[dir="rtl"] .experience-content {
+    text-align: right;
 }
 
 html[dir="rtl"] .party-moments .container,
@@ -1921,6 +2007,14 @@ html[dir="rtl"] .character-form,
 html[dir="rtl"] .fp-form,
 html[dir="rtl"] .contact-form {
     direction: rtl;
+}
+
+html[dir="rtl"] .character-form select {
+    text-align: right;
+    text-align-last: right;
+    background-position: left 12px center;
+    padding-left: 40px;
+    padding-right: 16px;
 }
 
 /*****************************FOOTER*****************************/
@@ -4827,6 +4921,7 @@ html[dir="rtl"] .contact-form {
     overflow: hidden;
     transition: 0.3s;
     position: relative;
+    width: 100%;
 }
 
 #page2.active {
@@ -4839,6 +4934,7 @@ html[dir="rtl"] .contact-form {
 .activity-card img {
     width: 100%;
     height: 150px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
 }
@@ -4902,6 +4998,7 @@ html[dir="rtl"] .contact-form {
     .activity-card {
         max-width: 420px;
         margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -4938,6 +5035,7 @@ html[dir="rtl"] .contact-form {
     .activity-card {
         max-width: 360px;
         margin: 0 auto;
+        width: 100%;
     }
 
     .activity-card img {
@@ -8851,6 +8949,7 @@ div {
         padding: 8px 0 12px;
         text-align: left;
         padding-left: 22px;
+        font-size: 17px;
     }
 
     .menu li a,
@@ -8858,6 +8957,7 @@ div {
         display: block;
         width: 100%;
         text-align: left;
+        font-size: 17px;
     }
 
     .menu .header-actions {
@@ -10169,6 +10269,11 @@ div {
     .exp-step {
         gap: 16px;
         margin-bottom: 30px;
+    }
+
+    html[dir="rtl"] .exp-timeline-line {
+        left: auto;
+        right: 28px;
     }
 
     .magic-grid,
