@@ -5721,7 +5721,7 @@ body.dark-mode .z5 {
 }
 
 .custom-option.has-bg {
-    background: transparent;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.58));
     border: 1px solid rgba(58, 58, 58, 0.06);
 }
 
@@ -5729,10 +5729,11 @@ body.dark-mode .z5 {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--custom-bg);
-    background-size: 160% 160%;
-    background-position: 0% 0%;
-    background-repeat: no-repeat;
+    background:
+        radial-gradient(circle at 18% 22%, var(--card-accent-1, rgba(242, 140, 82, 0.22)), rgba(242, 140, 82, 0) 58%),
+        radial-gradient(circle at 82% 78%, var(--card-accent-2, rgba(125, 185, 168, 0.22)), rgba(125, 185, 168, 0) 62%),
+        repeating-radial-gradient(circle at 24% 30%, rgba(58, 58, 58, 0.06) 0 1px, rgba(58, 58, 58, 0) 1px 12px);
+    opacity: 0.9;
     z-index: 0;
 }
 
@@ -5753,28 +5754,24 @@ body.dark-mode .z5 {
     width: 100%;
     height: 100%;
     border-radius: 26px;
-    background:
-        radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.18) 58%, rgba(255, 255, 255, 0) 70%),
-        radial-gradient(circle at 82% 32%, rgba(242, 140, 82, 0.18), rgba(242, 140, 82, 0) 62%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.28));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.22));
     z-index: 1;
 }
 
 .custom-option.has-bg h3 {
-    color: #fff;
+    color: var(--text-dark);
+    position: relative;
     z-index: 2;
 }
 
 .custom-option.has-bg p {
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(58, 58, 58, 0.86);
+    position: relative;
     z-index: 2;
 }
 
 body:not(.dark-mode) .custom-option.has-bg::before {
-    background:
-        radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.2) 58%, rgba(255, 255, 255, 0) 70%),
-        radial-gradient(circle at 82% 32%, rgba(242, 140, 82, 0.16), rgba(242, 140, 82, 0) 62%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.22));
 }
 
 body:not(.dark-mode) .custom-option.has-bg h3 {
@@ -5860,19 +5857,64 @@ body:not(.dark-mode) .custom-option.has-bg p {
 }
 
 body.dark-mode .custom-option.has-bg {
-    border-color: rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(31, 37, 45, 0.92), rgba(31, 37, 45, 0.78));
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .custom-option.has-bg::before {
-    background:
-        radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 62%),
-        radial-gradient(circle at 82% 32%, rgba(242, 140, 82, 0.22), rgba(242, 140, 82, 0) 62%),
-        linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.58));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.48));
+}
+
+body.dark-mode .custom-option--addons.has-bg::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.48));
+}
+
+body.dark-mode .custom-option.has-bg h3 {
+    color: #f2eee9;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+}
+
+body.dark-mode .custom-option.has-bg p {
+    color: rgba(242, 238, 233, 0.86);
+    position: relative;
+    z-index: 2;
+    opacity: 1;
 }
 
 .custom-option.has-bg h3::before {
     content: "" !important;
     display: none !important;
+}
+
+/* New customization grid accents (no images) */
+.custom-option--decor {
+    --card-accent-1: rgba(242, 140, 82, 0.28);
+    --card-accent-2: rgba(216, 199, 189, 0.28);
+}
+
+.custom-option--addons {
+    --card-accent-1: rgba(125, 185, 168, 0.3);
+    --card-accent-2: rgba(242, 140, 82, 0.22);
+}
+
+.custom-option--cake {
+    --card-accent-1: rgba(216, 199, 189, 0.32);
+    --card-accent-2: rgba(242, 140, 82, 0.22);
+}
+
+.custom-option--entry {
+    --card-accent-1: rgba(242, 140, 82, 0.22);
+    --card-accent-2: rgba(125, 185, 168, 0.28);
+}
+
+body.dark-mode .custom-option.has-bg::after {
+    background:
+        radial-gradient(circle at 18% 22%, var(--card-accent-1, rgba(242, 140, 82, 0.22)), rgba(242, 140, 82, 0) 58%),
+        radial-gradient(circle at 82% 78%, var(--card-accent-2, rgba(125, 185, 168, 0.22)), rgba(125, 185, 168, 0) 62%),
+        repeating-radial-gradient(circle at 24% 30%, rgba(242, 238, 233, 0.08) 0 1px, rgba(242, 238, 233, 0) 1px 12px);
+    opacity: 0.75;
 }
 
 .book-slot {
