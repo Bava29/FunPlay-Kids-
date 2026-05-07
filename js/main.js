@@ -123,6 +123,8 @@ function initMenu() {
 
     if (!toggle || !menu) return;
 
+    const isMobileNav = () => window.matchMedia("(max-width: 1024px)").matches;
+
     const closeMobileMenu = () => {
         menu.classList.remove("active");
         dropdowns.forEach((dropdown) => dropdown.classList.remove("active"));
@@ -139,7 +141,7 @@ function initMenu() {
 
     dropdowns.forEach((item) => {
         item.addEventListener("click", (event) => {
-            if (window.innerWidth > 768) return;
+            if (!isMobileNav()) return;
 
             event.stopPropagation();
             dropdowns.forEach((dropdown) => {
@@ -151,7 +153,7 @@ function initMenu() {
 
     menuLinks.forEach((link) => {
         link.addEventListener("click", () => {
-            if (window.innerWidth > 768) return;
+            if (!isMobileNav()) return;
             closeMobileMenu();
         });
     });
@@ -159,7 +161,7 @@ function initMenu() {
     window.addEventListener("pageshow", closeMobileMenu);
 
     window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
+        if (!isMobileNav()) {
             closeMobileMenu();
         }
     });
